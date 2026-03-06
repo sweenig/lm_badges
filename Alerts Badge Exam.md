@@ -214,3 +214,130 @@
 * `To provide coverage for both fixed limits and abnormal behavior`
 * To reduce alert noise, in the case that a static threshold is hit but the behavior is normal <- This is the right answer, but the test software thinks it's not. (LM may fix this)
 * `To disable alerts for duplicate datapoints` <- This is not the right answer, but the test software thinks it is.
+
+> What is a recipient group within an escalation chain?
+
+* A placeholder used to store inactive recipients
+* `A collection of users or contacts that receive alerts as a single entity`
+* A list of devices associated with a collector
+* A temporary set of filtered alerts
+
+> Which report provides full details of each alert, including severity and triggering value?
+
+* `All Alerts from Last 24 Hours Report`
+* Alert Routing Summary
+* No Data Report
+* Alert Frequency Report
+
+> What happens when an alert is escalated manually?
+
+* It re-sends the notification to the same stage for confirmation
+* `It immediately notifies the next stage in the escalation chain`
+* It automatically raises the alert to the next severity level
+* It resets the escalation interval timer
+
+> Which token dynamically inserts the value that triggered an alert into the message?
+
+* ##LEVEL##
+* `##VALUE##`
+* ##NUMBER##
+* ##THRESHOLD##
+
+> What is required for a dynamic threshold to begin generating alerts? (Select 2)
+
+* `A sufficient baseline of historical data`
+* `A deviation from normal behavior`
+* Nothing is required; dynamic thresholds work out-of-the-box, similar to static thresholds
+* Static thresholds must also be enabled for the datapoint so the system can determine normal behavior
+
+> What is the purpose of using forecasting in LogicMonitor?
+
+* To visualize projected capacity limits for monitored metrics
+* To automatically adjust thresholds based on usage trends
+* To test alert routing without sending notifications
+* `To predict when a datapoint may reach alert status based on historical trends`
+
+> How does a time-based escalation chain differ from a standard one?
+
+* It adjusts escalation timing based on how long an alert remains unacknowledged
+* ` It routes alerts differently based on the day or time the alert was triggered`
+* It automatically suppresses alerts during scheduled downtime periods
+* It prioritizes alert delivery by alert severity instead of by user group
+
+> If you want to apply unique thresholds to a single disk on a specific server, where should you tune?
+
+* Global level
+* Group level
+* Device type level
+* `Instance level`
+
+> At which level do threshold settings override all others in LogicMonitor?
+
+* `Instance level`
+* Group level
+* Resource level
+* Global level
+
+> What is the function of rate limits in escalation chains?
+
+* `To prevent excessive notifications within a given time period`
+* To slow down data collection rates
+* To suppress alerts during downtime
+* To limit how often alerts can re-trigger within a given timeframe.
+
+> Sophia’s team receives dozens of CPU alerts for >80% usage across many virtual machines. After investigating, she finds this level is normal for their workload. What action should Sophia take to reduce noise while maintaining useful alert coverage?
+
+* `Tune the default CPU threshold for the VM group`
+* Disable all CPU-related DataSources
+* Change all alert severities from critical to warning
+* Delete the inherited thresholds from the DataSources
+
+> Which severity level is used when a datapoint slightly exceeds its normal range?
+
+* Error
+* `Warning`
+* Informational
+* Critical
+
+> What is the purpose of a ‘No Data’ alert?
+
+* To alert when a Collector is unreachable
+* `To alert when a device stops responding entirely`
+* To alert when a threshold value is too high
+* To alert when an alert clears prematurely
+
+> If you are not seeing an expected alert on the Alerts page, what should you check first?
+
+* The alert routing settings
+* The raw data tab
+* ` The filters and time range on the Alerts page`
+* The alert threshold
+
+> What determines whether an alert is routed to a specific destination?
+
+* The value of the tokens in the alert’s message template
+* Whether it is in a particular resource group
+* `Whether it matches the parameters set in the alert rule`
+* The type of device generating the alert
+
+> What is a band factor in the context of dynamic thresholds?
+
+* A limit for the number of alerts per minute
+* `A measure of deviation from normal behavior`
+* A percentage of total device uptime
+* It represents the fixed value of the dynamic threshold at any given time
+
+> What is the main purpose of LogicMonitor’s default thresholds?
+
+* To ensure every device is held to the same alerting standards
+* To eliminate the need for manual alert configuration
+* `To provide an initial baseline for alerting that can be tuned for your environment`
+* To ensure manufacturer guidelines are followed
+
+> Why is it important to tune LogicMonitor’s default thresholds?
+
+* `Because default thresholds won’t always be accurate for your specific environment`
+* Because thresholds are only applied to new devices
+* Because tuning is required to activate alert routing
+* Because default thresholds cannot generate critical alerts
+
