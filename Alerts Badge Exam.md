@@ -207,3 +207,10 @@
 * Change Collector configurations
 * Schedule maintenance windows globally
 * Modify DataSource polling frequency
+
+> Why might a user enable both static and dynamic thresholds on the same datapoint? (Select 2)
+
+* To remove the need for manual tuning
+* `To provide coverage for both fixed limits and abnormal behavior`
+* To reduce alert noise, in the case that a static threshold is hit but the behavior is normal <- This is the right answer, but the test software thinks it's not. (LM may fix this)
+* `To disable alerts for duplicate datapoints` <- This is not the right answer, but the test software thinks it is.
